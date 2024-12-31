@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect, useState } from "react"
 
 export default function Github(){
@@ -22,7 +23,7 @@ export default function Github(){
         }
         gitpfp();
     }, [])
-    
+
     return <div>
         <div className="flex justify-center items-center gap-x-1 gap-y-10 p-6 left-0">
             <div><img src={data.avatar_url} alt="Github Pic" 
